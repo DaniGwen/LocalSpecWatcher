@@ -1,0 +1,15 @@
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\LocalSpecWatcher.exe
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\obj\Debug\netcoreapp3.1\LocalSpecWatcher.csprojAssemblyReference.cache
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\obj\Debug\netcoreapp3.1\LocalSpecWatcher.AssemblyInfoInputs.cache
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\obj\Debug\netcoreapp3.1\LocalSpecWatcher.AssemblyInfo.cs
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\LocalSpecWatcher.deps.json
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\LocalSpecWatcher.runtimeconfig.json
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\LocalSpecWatcher.runtimeconfig.dev.json
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\LocalSpecWatcher.dll
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\LocalSpecWatcher.pdb
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\System.Management.dll
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\obj\Debug\netcoreapp3.1\LocalSpecWatcher.csproj.CopyComplete
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\obj\Debug\netcoreapp3.1\LocalSpecWatcher.dll
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\obj\Debug\netcoreapp3.1\LocalSpecWatcher.pdb
