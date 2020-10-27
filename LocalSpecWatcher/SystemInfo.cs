@@ -131,25 +131,7 @@ namespace LocalSpecWatcher
 
         private string GetHostname()
         {
-            string diskPartition = "Win32_Account";
-
-            ManagementObjectSearcher partitionObj = new ManagementObjectSearcher("select * from " + diskPartition);
-
-            string hostname = string.Empty;
-            var propertyData = new List<PropertyData>();
-
-            foreach (ManagementObject obj in partitionObj.Get())
-            {
-                foreach (PropertyData property in obj.Properties)
-                {
-                    propertyData.Add(property);
-                }
-            }
-
-            hostname = propertyData
-                .First(p => p.Name == "Domain")
-                .Value
-                .ToString();
+            var hostname = Environment.MachineName;
 
             return hostname;
         }
