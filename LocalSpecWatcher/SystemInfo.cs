@@ -2,10 +2,11 @@
 using System.IO;
 using System.Management;
 using System.Text;
+using Topshelf;
 
 namespace LocalSpecWatcher
 {
-    public class SystemInfo
+    public class SystemInfo : ServiceControl
     {
         public string Hostname { get; set; }
 
@@ -161,6 +162,16 @@ namespace LocalSpecWatcher
             return string.Format("{0:n" + decimalPlaces + "} {1}",
                 adjustedSize,
                 SizeSuffixes[mag]);
+        }
+
+        public bool Start(HostControl hostControl)
+        {
+            return true;
+        }
+
+        public bool Stop(HostControl hostControl)
+        {
+            return true;
         }
     }
 }

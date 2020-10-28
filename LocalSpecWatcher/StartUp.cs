@@ -10,7 +10,7 @@ namespace LocalSpecWatcher
         {
             HostFactory.Run(x =>
             {
-                x.Service<LoggingService>();
+                x.Service<SystemInfo>();
                 x.EnableServiceRecovery(r => r.RestartService(TimeSpan.FromSeconds(10)));
                 x.SetServiceName("LocalSpecWatcher");
                 x.StartAutomatically();
