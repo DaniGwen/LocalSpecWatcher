@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LocalSpecWatcher.Service;
+using System;
+using Topshelf;
 
 namespace LocalSpecWatcher
 {
@@ -6,17 +8,13 @@ namespace LocalSpecWatcher
     {
         static void Main()
         {
-            var systemInfo = new SystemInfo();
-
-            Console.WriteLine("OS: " + systemInfo.OperatingSystem);
-            Console.WriteLine();
-            Console.WriteLine("Hostname: " + systemInfo.Hostname);
-            Console.WriteLine();
-            Console.WriteLine("Ram: " + systemInfo.Ram);
-            Console.WriteLine();
-            Console.WriteLine("Processor: " +  systemInfo.Processor);            
-            Console.WriteLine();
-            Console.WriteLine("Drives: " + systemInfo.Drives);
+            HostFactory.Run(x =>
+            {
+                x.Service<LoggingService>();
+                x.EnableServiceRecovery(r => r.RestartService(TimeSpan.FromSeconds(10)));
+                x.SetServiceName("LocalSpecWatcher");
+                x.StartAutomatically();
+            });
         }
     }
 }

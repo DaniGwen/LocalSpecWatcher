@@ -41,6 +41,10 @@
             "System.Management": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "Topshelf": {
+              "target": "Package",
+              "version": "[4.2.1, )"
             }
           },
           "imports": [

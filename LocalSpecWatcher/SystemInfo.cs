@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Management;
 using System.Text;
 
@@ -9,7 +7,6 @@ namespace LocalSpecWatcher
 {
     public class SystemInfo
     {
-
         public string Hostname { get; set; }
 
         public string OperatingSystem { get; set; }
