@@ -8,15 +8,17 @@ namespace LocalSpecWatcher
 {
     public class SystemInfo : ServiceControl
     {
-        public string Hostname { get; set; }
+        public string Hostname { get; private set; }
 
-        public string OperatingSystem { get; set; }
+        public string OperatingSystem { get; private set; }
 
-        public string Processor { get; set; }
+        public string Processor { get; private set; }
 
-        public string Ram { get; set; }
+        public string Ram { get; private set; }
 
-        public string Drives { get; set; }
+        public string Drives { get; private set; }
+
+        private readonly string AmcUrl = "https://lwlsv926/lwl/api/Amc/";
 
         public SystemInfo()
         {
@@ -25,6 +27,17 @@ namespace LocalSpecWatcher
             this.Processor = this.GetProcessor();
             this.Hostname = GetHostname();
             this.Drives = GetDrivesInfo();
+        }
+
+        public bool Start(HostControl hostControl)
+        {
+
+            return true;
+        }
+
+        public bool Stop(HostControl hostControl)
+        {
+            return true;
         }
 
         private string GetProcessor()
@@ -84,7 +97,7 @@ namespace LocalSpecWatcher
                     }
                 }
             }
-            result = this.SizeSuffix(ramSize,0);
+            result = this.SizeSuffix(ramSize, 0);
 
             return result;
         }
@@ -162,16 +175,6 @@ namespace LocalSpecWatcher
             return string.Format("{0:n" + decimalPlaces + "} {1}",
                 adjustedSize,
                 SizeSuffixes[mag]);
-        }
-
-        public bool Start(HostControl hostControl)
-        {
-            return true;
-        }
-
-        public bool Stop(HostControl hostControl)
-        {
-            return true;
         }
     }
 }

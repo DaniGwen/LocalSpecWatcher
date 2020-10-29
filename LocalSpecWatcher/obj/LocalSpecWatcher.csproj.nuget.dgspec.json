@@ -22,7 +22,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\danig": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://lwlsv019/tfs/LWL/_packaging/ITDW/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -38,6 +40,30 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Liebherr.Api.Cfg.Client": {
+              "target": "Package",
+              "version": "[1.1.25, )"
+            },
+            "Liebherr.Messaging.Contracts": {
+              "target": "Package",
+              "version": "[0.1.213, )"
+            },
+            "Liebherr.Web.Hosting": {
+              "target": "Package",
+              "version": "[2.3.8, )"
+            },
+            "Liebherr.Web.Hosting.Client": {
+              "target": "Package",
+              "version": "[2.3.8, )"
+            },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
             "System.Management": {
               "target": "Package",
               "version": "[4.7.0, )"

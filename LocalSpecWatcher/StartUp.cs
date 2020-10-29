@@ -1,5 +1,4 @@
-﻿using LocalSpecWatcher.Service;
-using System;
+﻿using System;
 using Topshelf;
 
 namespace LocalSpecWatcher
