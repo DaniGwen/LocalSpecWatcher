@@ -11,6 +11,7 @@
           "Liebherr.Api.Cfg.Client": "1.1.25",
           "Liebherr.Messaging.Contracts": "0.1.213",
           "Liebherr.Web.Hosting.Client": "2.3.8",
+          "Microsoft.AspNet.SignalR.Client": "2.4.1",
           "Newtonsoft.Json": "12.0.3",
           "System.Management": "4.7.0",
           "Topshelf": "4.2.1"
@@ -52,6 +53,17 @@
           "lib/netstandard2.0/Liebherr.Web.Hosting.Client.dll": {
             "assemblyVersion": "2.3.8.0",
             "fileVersion": "2.3.8.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.SignalR.Client/2.4.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.19093"
           }
         }
       },
@@ -371,6 +383,13 @@
       "sha512": "sha512-3FF91Ydqe1TsdR8X8Qkya4f/GVYKr+791lsdBYotbFMJSNKszcB6e5UE1NWG0o9MKDCsP4F5HHFb23AVHW2V/A==",
       "path": "liebherr.web.hosting.client/2.3.8",
       "hashPath": "liebherr.web.hosting.client.2.3.8.nupkg.sha512"
+    },
+    "Microsoft.AspNet.SignalR.Client/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x5Bc1LkjBZV9GEjflBF0zsKgXbpFkTAArQMAdbhKKC1MopLaFPUYQZrCAPgGSAW8OudHGhyEfMZ5vJbdBu8IsA==",
+      "path": "microsoft.aspnet.signalr.client/2.4.1",
+      "hashPath": "microsoft.aspnet.signalr.client.2.4.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",

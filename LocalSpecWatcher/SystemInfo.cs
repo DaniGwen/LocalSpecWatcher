@@ -2,6 +2,7 @@
 using System.IO;
 using System.Management;
 using System.Text;
+using System.Timers;
 using Topshelf;
 
 namespace LocalSpecWatcher
@@ -20,24 +21,49 @@ namespace LocalSpecWatcher
 
         private readonly string AmcUrl = "https://lwlsv926/lwl/api/Amc/";
 
+        private static Timer timer;
+
         public SystemInfo()
         {
-            this.OperatingSystem = this.GetOperatingSystem();
-            this.Ram = this.GetRam();
-            this.Processor = this.GetProcessor();
-            this.Hostname = GetHostname();
-            this.Drives = GetDrivesInfo();
+            timer = new Timer();
+            // 4hrs = 14400000ms
+            timer.Interval = 10000;  //For test every 10 seconds gets system data
+            timer.Elapsed += OnTimeUpEvent;
+            timer.AutoReset = true;
+            timer.Enabled = true;
         }
 
         public bool Start(HostControl hostControl)
         {
+            //Initialize client
+            //Save info in SystemInfoModel
 
+            this.CollectSystemInfo();
             return true;
         }
 
         public bool Stop(HostControl hostControl)
         {
             return true;
+        }
+
+        //Event handler
+        private void OnTimeUpEvent(object sender, ElapsedEventArgs e)
+        {
+            this.CollectSystemInfo();
+
+            Console.WriteLine("Properties updated!");
+        }
+
+        private void CollectSystemInfo()
+        {
+            this.OperatingSystem = this.GetOperatingSystem();
+            this.Ram = this.GetRam();
+            this.Processor = this.GetProcessor();
+            this.Hostname = GetHostname();
+            this.Drives = GetDrivesInfo();
+
+            Console.WriteLine("System info Updated");
         }
 
         private string GetProcessor()

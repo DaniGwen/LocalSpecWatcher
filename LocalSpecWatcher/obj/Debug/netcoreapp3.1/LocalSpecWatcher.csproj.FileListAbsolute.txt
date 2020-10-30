@@ -39,3 +39,4 @@ C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcorea
 C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\Liebherr.Api.Cfg.Client.dll
+C:\Users\danig\source\repos\LocalSpecWatcher\LocalSpecWatcher\bin\Debug\netcoreapp3.1\Microsoft.AspNet.SignalR.Client.dll
